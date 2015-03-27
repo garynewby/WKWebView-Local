@@ -9,8 +9,6 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 
-
-
 @interface ViewController () <WKScriptMessageHandler>
 
 @property (strong, nonatomic) WKWebView *webView;
