@@ -12,3 +12,4 @@ the current limitations of WKWebView in iOS8.x, ie:
 - WKWebView can load html strings, but local resources such  
 as css and images wont load.  
 
+Updated: Local load working with baseUrl set, embedded server unnecessary.
