@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6C82001D9D6BB3003EEC33 /* test_local.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E6C81FF1D9D6BB3003EEC33 /* test_local.html */; };
 		4EBE00111A3844CE009BCC86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00101A3844CE009BCC86 /* main.m */; };
 		4EBE00141A3844CE009BCC86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00131A3844CE009BCC86 /* AppDelegate.m */; };
 		4EBE00171A3844CE009BCC86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00161A3844CE009BCC86 /* ViewController.m */; };
 		4EBE001A1A3844CE009BCC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE00181A3844CE009BCC86 /* Main.storyboard */; };
 		4EBE001C1A3844CE009BCC86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE001B1A3844CE009BCC86 /* Images.xcassets */; };
 		4EBE001F1A3844CE009BCC86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE001D1A3844CE009BCC86 /* LaunchScreen.xib */; };
-		4EBE002B1A3844CE009BCC86 /* WKWebViewLocalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE002A1A3844CE009BCC86 /* WKWebViewLocalTests.m */; };
 		4EBE00401A384730009BCC86 /* OCFWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00371A384730009BCC86 /* OCFWebServer.m */; };
 		4EBE00411A384730009BCC86 /* OCFWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00391A384730009BCC86 /* OCFWebServerConnection.m */; };
 		4EBE00421A384730009BCC86 /* OCFWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE003C1A384730009BCC86 /* OCFWebServerRequest.m */; };
@@ -22,17 +22,8 @@
 		4EBE00491A385497009BCC86 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE00481A385497009BCC86 /* assets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4EBE00251A3844CE009BCC86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4EBE00031A3844CE009BCC86 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4EBE000A1A3844CE009BCC86;
-			remoteInfo = WKWebViewLocal;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		4E6C81FF1D9D6BB3003EEC33 /* test_local.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test_local.html; sourceTree = "<group>"; };
 		4EBE000B1A3844CE009BCC86 /* WKWebViewLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBE000F1A3844CE009BCC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EBE00101A3844CE009BCC86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,9 +34,6 @@
 		4EBE00191A3844CE009BCC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EBE001B1A3844CE009BCC86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WKWebViewLocal/Images.xcassets; sourceTree = "<group>"; };
 		4EBE001E1A3844CE009BCC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4EBE00241A3844CE009BCC86 /* WKWebViewLocalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewLocalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EBE00291A3844CE009BCC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EBE002A1A3844CE009BCC86 /* WKWebViewLocalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewLocalTests.m; sourceTree = "<group>"; };
 		4EBE00361A384730009BCC86 /* OCFWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServer.h; sourceTree = "<group>"; };
 		4EBE00371A384730009BCC86 /* OCFWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServer.m; sourceTree = "<group>"; };
 		4EBE00381A384730009BCC86 /* OCFWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerConnection.h; sourceTree = "<group>"; };
@@ -68,13 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EBE00211A3844CE009BCC86 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,7 +67,6 @@
 				4EBE00351A384730009BCC86 /* OCFWebServer */,
 				4EBE00341A3844E9009BCC86 /* Resources */,
 				4EBE000E1A3844CE009BCC86 /* Supporting Files */,
-				4EBE00271A3844CE009BCC86 /* WKWebViewLocalTests */,
 				4EBE000C1A3844CE009BCC86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				4EBE000B1A3844CE009BCC86 /* WKWebViewLocal.app */,
-				4EBE00241A3844CE009BCC86 /* WKWebViewLocalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +86,7 @@
 				4EBE00131A3844CE009BCC86 /* AppDelegate.m */,
 				4EBE00151A3844CE009BCC86 /* ViewController.h */,
 				4EBE00161A3844CE009BCC86 /* ViewController.m */,
+				4E6C81FF1D9D6BB3003EEC33 /* test_local.html */,
 				4EBE00441A384889009BCC86 /* test.html */,
 			);
 			path = WKWebViewLocal;
@@ -120,23 +100,6 @@
 			);
 			name = "Supporting Files";
 			path = WKWebViewLocal;
-			sourceTree = "<group>";
-		};
-		4EBE00271A3844CE009BCC86 /* WKWebViewLocalTests */ = {
-			isa = PBXGroup;
-			children = (
-				4EBE002A1A3844CE009BCC86 /* WKWebViewLocalTests.m */,
-				4EBE00281A3844CE009BCC86 /* Supporting Files */,
-			);
-			path = WKWebViewLocalTests;
-			sourceTree = "<group>";
-		};
-		4EBE00281A3844CE009BCC86 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4EBE00291A3844CE009BCC86 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4EBE00341A3844E9009BCC86 /* Resources */ = {
@@ -187,24 +150,6 @@
 			productReference = 4EBE000B1A3844CE009BCC86 /* WKWebViewLocal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EBE00231A3844CE009BCC86 /* WKWebViewLocalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4EBE00311A3844CE009BCC86 /* Build configuration list for PBXNativeTarget "WKWebViewLocalTests" */;
-			buildPhases = (
-				4EBE00201A3844CE009BCC86 /* Sources */,
-				4EBE00211A3844CE009BCC86 /* Frameworks */,
-				4EBE00221A3844CE009BCC86 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4EBE00261A3844CE009BCC86 /* PBXTargetDependency */,
-			);
-			name = WKWebViewLocalTests;
-			productName = WKWebViewLocalTests;
-			productReference = 4EBE00241A3844CE009BCC86 /* WKWebViewLocalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,10 +161,6 @@
 				TargetAttributes = {
 					4EBE000A1A3844CE009BCC86 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					4EBE00231A3844CE009BCC86 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 4EBE000A1A3844CE009BCC86;
 					};
 				};
 			};
@@ -237,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				4EBE000A1A3844CE009BCC86 /* WKWebViewLocal */,
-				4EBE00231A3844CE009BCC86 /* WKWebViewLocalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,14 +191,8 @@
 				4EBE00451A384889009BCC86 /* test.html in Resources */,
 				4EBE001A1A3844CE009BCC86 /* Main.storyboard in Resources */,
 				4EBE001F1A3844CE009BCC86 /* LaunchScreen.xib in Resources */,
+				4E6C82001D9D6BB3003EEC33 /* test_local.html in Resources */,
 				4EBE001C1A3844CE009BCC86 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EBE00221A3844CE009BCC86 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,23 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EBE00201A3844CE009BCC86 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4EBE002B1A3844CE009BCC86 /* WKWebViewLocalTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4EBE00261A3844CE009BCC86 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4EBE000A1A3844CE009BCC86 /* WKWebViewLocal */;
-			targetProxy = 4EBE00251A3844CE009BCC86 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4EBE00181A3844CE009BCC86 /* Main.storyboard */ = {
@@ -417,40 +335,6 @@
 			};
 			name = Release;
 		};
-		4EBE00321A3844CE009BCC86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WKWebViewLocalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKWebViewLocal.app/WKWebViewLocal";
-			};
-			name = Debug;
-		};
-		4EBE00331A3844CE009BCC86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WKWebViewLocalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKWebViewLocal.app/WKWebViewLocal";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -470,14 +354,7 @@
 				4EBE00301A3844CE009BCC86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		4EBE00311A3844CE009BCC86 /* Build configuration list for PBXNativeTarget "WKWebViewLocalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4EBE00321A3844CE009BCC86 /* Debug */,
-				4EBE00331A3844CE009BCC86 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
