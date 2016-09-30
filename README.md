@@ -1,7 +1,7 @@
 WKWebViewLocal
 ==============
 
-Updated: Local file load working with baseUrl set, embedded server unnecessary (at least in iOS 10).
+Updated: Local file load working with baseUrl set, embedded server is now unnecessary (at least in iOS 10).
 
 Example of WKWebView loading local files and calling between javascript and Objective-C.  
   
