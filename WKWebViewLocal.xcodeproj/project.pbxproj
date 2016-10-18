@@ -14,11 +14,6 @@
 		4EBE001A1A3844CE009BCC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE00181A3844CE009BCC86 /* Main.storyboard */; };
 		4EBE001C1A3844CE009BCC86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE001B1A3844CE009BCC86 /* Images.xcassets */; };
 		4EBE001F1A3844CE009BCC86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE001D1A3844CE009BCC86 /* LaunchScreen.xib */; };
-		4EBE00401A384730009BCC86 /* OCFWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00371A384730009BCC86 /* OCFWebServer.m */; };
-		4EBE00411A384730009BCC86 /* OCFWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE00391A384730009BCC86 /* OCFWebServerConnection.m */; };
-		4EBE00421A384730009BCC86 /* OCFWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE003C1A384730009BCC86 /* OCFWebServerRequest.m */; };
-		4EBE00431A384730009BCC86 /* OCFWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE003F1A384730009BCC86 /* OCFWebServerResponse.m */; };
-		4EBE00451A384889009BCC86 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE00441A384889009BCC86 /* test.html */; };
 		4EBE00491A385497009BCC86 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE00481A385497009BCC86 /* assets */; };
 /* End PBXBuildFile section */
 
@@ -34,17 +29,6 @@
 		4EBE00191A3844CE009BCC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EBE001B1A3844CE009BCC86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WKWebViewLocal/Images.xcassets; sourceTree = "<group>"; };
 		4EBE001E1A3844CE009BCC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4EBE00361A384730009BCC86 /* OCFWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServer.h; sourceTree = "<group>"; };
-		4EBE00371A384730009BCC86 /* OCFWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServer.m; sourceTree = "<group>"; };
-		4EBE00381A384730009BCC86 /* OCFWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerConnection.h; sourceTree = "<group>"; };
-		4EBE00391A384730009BCC86 /* OCFWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerConnection.m; sourceTree = "<group>"; };
-		4EBE003A1A384730009BCC86 /* OCFWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerPrivate.h; sourceTree = "<group>"; };
-		4EBE003B1A384730009BCC86 /* OCFWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerRequest.h; sourceTree = "<group>"; };
-		4EBE003C1A384730009BCC86 /* OCFWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerRequest.m; sourceTree = "<group>"; };
-		4EBE003D1A384730009BCC86 /* OCFWebServerRequest_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerRequest_Types.h; sourceTree = "<group>"; };
-		4EBE003E1A384730009BCC86 /* OCFWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerResponse.h; sourceTree = "<group>"; };
-		4EBE003F1A384730009BCC86 /* OCFWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerResponse.m; sourceTree = "<group>"; };
-		4EBE00441A384889009BCC86 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		4EBE00481A385497009BCC86 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = WKWebViewLocal/assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +48,6 @@
 			children = (
 				4EBE000D1A3844CE009BCC86 /* WKWebViewLocal */,
 				4EBE00481A385497009BCC86 /* assets */,
-				4EBE00351A384730009BCC86 /* OCFWebServer */,
 				4EBE00341A3844E9009BCC86 /* Resources */,
 				4EBE000E1A3844CE009BCC86 /* Supporting Files */,
 				4EBE000C1A3844CE009BCC86 /* Products */,
@@ -87,7 +70,6 @@
 				4EBE00151A3844CE009BCC86 /* ViewController.h */,
 				4EBE00161A3844CE009BCC86 /* ViewController.m */,
 				4E6C81FF1D9D6BB3003EEC33 /* test_local.html */,
-				4EBE00441A384889009BCC86 /* test.html */,
 			);
 			path = WKWebViewLocal;
 			sourceTree = "<group>";
@@ -110,24 +92,6 @@
 				4EBE001B1A3844CE009BCC86 /* Images.xcassets */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		4EBE00351A384730009BCC86 /* OCFWebServer */ = {
-			isa = PBXGroup;
-			children = (
-				4EBE00361A384730009BCC86 /* OCFWebServer.h */,
-				4EBE00371A384730009BCC86 /* OCFWebServer.m */,
-				4EBE00381A384730009BCC86 /* OCFWebServerConnection.h */,
-				4EBE00391A384730009BCC86 /* OCFWebServerConnection.m */,
-				4EBE003A1A384730009BCC86 /* OCFWebServerPrivate.h */,
-				4EBE003B1A384730009BCC86 /* OCFWebServerRequest.h */,
-				4EBE003C1A384730009BCC86 /* OCFWebServerRequest.m */,
-				4EBE003D1A384730009BCC86 /* OCFWebServerRequest_Types.h */,
-				4EBE003E1A384730009BCC86 /* OCFWebServerResponse.h */,
-				4EBE003F1A384730009BCC86 /* OCFWebServerResponse.m */,
-			);
-			name = OCFWebServer;
-			path = WKWebViewLocal/OCFWebServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EBE00491A385497009BCC86 /* assets in Resources */,
-				4EBE00451A384889009BCC86 /* test.html in Resources */,
 				4EBE001A1A3844CE009BCC86 /* Main.storyboard in Resources */,
 				4EBE001F1A3844CE009BCC86 /* LaunchScreen.xib in Resources */,
 				4E6C82001D9D6BB3003EEC33 /* test_local.html in Resources */,
@@ -204,12 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EBE00171A3844CE009BCC86 /* ViewController.m in Sources */,
-				4EBE00431A384730009BCC86 /* OCFWebServerResponse.m in Sources */,
 				4EBE00141A3844CE009BCC86 /* AppDelegate.m in Sources */,
-				4EBE00401A384730009BCC86 /* OCFWebServer.m in Sources */,
 				4EBE00111A3844CE009BCC86 /* main.m in Sources */,
-				4EBE00421A384730009BCC86 /* OCFWebServerRequest.m in Sources */,
-				4EBE00411A384730009BCC86 /* OCFWebServerConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

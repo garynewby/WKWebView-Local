@@ -7,37 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "OCFWebServer.h"
-#import "OCFWebServerRequest.h"
-#import "OCFWebServerResponse.h"
-
-
-@interface AppDelegate ()
-
-@property(nonatomic, strong) OCFWebServer *server;
-
-@end
 
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    self.server = [OCFWebServer new];
-    [self.server addDefaultHandlerForMethod:@"GET" requestClass:[OCFWebServerRequest class] processBlock:^void(OCFWebServerRequest *request) {
-        NSString *htmlDirectory = [[NSBundle mainBundle] bundlePath];
-        NSString *fileName = [request.URL.absoluteString stringByReplacingOccurrencesOfString:@"http://localhost:8080/" withString:@""];
-        NSString *filePath = [NSString stringWithFormat:@"%@/%@", htmlDirectory, fileName];
-        NSLog(@"filePath:%@", filePath);
-        if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-            NSLog(@"File missing!");
-        }
-        OCFWebServerFileResponse *response = [OCFWebServerFileResponse responseWithFile:filePath];
-        [request respondWith:response];
-    }];
-    [self.server start];
-    
     return YES;
 }
 

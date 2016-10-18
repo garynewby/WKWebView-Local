@@ -4,23 +4,11 @@
     <link href="assets/test.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h3>WKWebView - Local file</h3>
+    <h3>WKWebView - Loading local file, assets and css.</h3>
     <img src="assets/pic.png" width="100">
     <p>
-    Update: In iOS 10 (Not sure when this started working) Local files and assets load when baseUrl is set.
+    Local files and assets load correctly if baseUrl is set.
     </p>
-    <p class="old">
-    Currently in iOS8.1/8.2 beta there is a bug with WKWebView that blocks the loading of local files.
-    </p>
-    
-    <p class="old">
-    One work around is to embed a minimal web server (in this case OCFWebServer) in the app and serve files locally ie: http://localhost:8080
-    </p>
-
-    <p class="old">
-    This html file is located in the bundle, and loads a local css style sheet from the assets sub directory.
-    </p>
-    
     <p>
     A ScriptMessageHandler "MyObserver" is added when the WKWebView is configured at start up.
     The "Call Javascript" button calls the javascript function testJS() in this html file.

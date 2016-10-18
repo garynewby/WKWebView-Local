@@ -1,18 +1,5 @@
 WKWebViewLocal
 ==============
 
-Updated: Local file load working with baseUrl set, embedded server is now unnecessary (at least in iOS 10).
-
---
-
 Example of WKWebView loading local files and calling between javascript and Objective-C.  
-  
-Local files are accessed via a minimal embedded http server to work around  
-the current limitations of WKWebView in iOS8.x, ie:  
-
-- WKWebView can only load local files from the tmp directory  
-(files need to be copied, can be cleared by system).  
-
-- WKWebView can load html strings, but local resources such  
-as css and images wont load.  
-
+Loading local files and assets requires the baseUrl to be set.

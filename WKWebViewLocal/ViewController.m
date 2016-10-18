@@ -37,17 +37,11 @@
     self.webView.navigationDelegate = self;
     [self.view addSubview:self.webView];
     
-    BOOL loadString = YES;
-    if (loadString) {
-        // Load html string, works but css and other resources aren't loadable
-        // loadRequest with file URL works only on the simulator but has same problem with resource loading
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test_local" ofType:@"html"];
-        NSString *html = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-        [self.webView loadHTMLString:html baseURL:[NSBundle mainBundle].resourceURL];
-    } else {
-        // Load local file
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:8080/test.html"]]];
-    }
+    // baseURL needs to be set for local files to load correctly
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test_local" ofType:@"html"];
+    NSString *html = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:html baseURL:[NSBundle mainBundle].resourceURL];
+ 
 }
 
 - (IBAction)callJavascriptTapped:(id)sender
