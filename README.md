@@ -1,5 +1,5 @@
 WKWebViewLocal
 ==============
 
-Example of WKWebView loading local files and calling between javascript and Objective-C.  
-Loading local files and assets requires the baseUrl to be set.
+Example in Swift 4 of WKWebView loading local file (including css and images) and calling between Javascript and Swift.  
+
