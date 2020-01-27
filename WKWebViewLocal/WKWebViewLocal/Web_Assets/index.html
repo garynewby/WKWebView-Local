@@ -23,12 +23,16 @@
     testJS() > postMessage(message) calls the WKScriptMessageHandler delegate method userContentController
     and brings up a dialog with the passed message text.
     </p>
-    
+
+    <p>
+    <a href="page.html">Some page...</a>
+    </p>
+
     <script>
         function testJS(){
             var message = "Yo!"
             window.webkit.messageHandlers.MyObserver.postMessage(message)
-            return "OK!"
+            return "Show dialog"
         }
     </script>
     

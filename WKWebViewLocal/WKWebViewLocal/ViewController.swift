@@ -3,7 +3,6 @@
 //  WKWebViewLocal
 //
 //  Created by Gary Newby on 2/17/18.
-//  Copyright © 2018 Mellowmuse. All rights reserved.
 //
 
 import UIKit
@@ -25,9 +24,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        title = "WKWebView"
         webView.navigationDelegate = self;
-        
+
         // Add addScriptMessageHandler in javascript: window.webkit.messageHandlers.MyObserver.postMessage()
         webView.configuration.userContentController.add(self, name: "MyObserver")
         
