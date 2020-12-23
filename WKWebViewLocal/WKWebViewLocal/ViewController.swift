@@ -10,11 +10,11 @@ import WebKit
 
 // Wrap the WKWebView webview to allow IB use
 
-class MyWebView : WKWebView {
+class MyWebView: WKWebView {
     required init?(coder: NSCoder) {
         let configuration = WKWebViewConfiguration()
         let controller = WKUserContentController()
-        configuration.userContentController = controller;
+        configuration.userContentController = controller
         super.init(frame: CGRect.zero, configuration: configuration)
     }
 }
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         title = "WKWebView"
-        webView.navigationDelegate = self;
+        webView.navigationDelegate = self
 
         // Add addScriptMessageHandler in javascript: window.webkit.messageHandlers.MyObserver.postMessage()
         webView.configuration.userContentController.add(self, name: "MyObserver")
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : WKScriptMessageHandler {
+extension ViewController: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         // Callback from javascript: window.webkit.messageHandlers.MyObserver.postMessage(message)
         let text = message.body as! String;
@@ -81,12 +81,8 @@ extension ViewController : WKScriptMessageHandler {
     }
 }
 
-extension ViewController : WKNavigationDelegate {
+extension ViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("didFinish navigation:");
+        print("didFinish navigation:")
     }
 }
-
-
-
-
