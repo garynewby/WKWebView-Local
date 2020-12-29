@@ -8,20 +8,9 @@
 import UIKit
 import WebKit
 
-// Wrap the WKWebView webview to allow IB use
-
-class MyWebView: WKWebView {
-    required init?(coder: NSCoder) {
-        let configuration = WKWebViewConfiguration()
-        let controller = WKUserContentController()
-        configuration.userContentController = controller
-        super.init(frame: CGRect.zero, configuration: configuration)
-    }
-}
-
 class ViewController: UIViewController {
-    @IBOutlet weak var webView: MyWebView!
-    
+    @IBOutlet weak var webView: WebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,12 +19,12 @@ class ViewController: UIViewController {
 
         // Add addScriptMessageHandler in javascript: window.webkit.messageHandlers.MyObserver.postMessage()
         webView.configuration.userContentController.add(self, name: "MyObserver")
-        
+
         // Choose to load a file or a string
         let loadFile = false
-        
-        if let filePath = Bundle.main.path(forResource:"index", ofType:"html", inDirectory: "Web_Assets") {
-            if (loadFile) {
+
+        if let filePath = Bundle.main.path(forResource: "index", ofType: "html", inDirectory: "Web_Assets") {
+            if loadFile {
                 // load file
                 let filePathURL = URL.init(fileURLWithPath: filePath)
                 let fileDirectoryURL = filePathURL.deletingLastPathComponent()
@@ -51,11 +40,11 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     @IBAction func callJavascriptTapped(_ sender: UIButton) {
         let script = "testJS()"
         webView.evaluateJavaScript(script) { (result: Any?, error: Error?) in
@@ -71,9 +60,9 @@ class ViewController: UIViewController {
 extension ViewController: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         // Callback from javascript: window.webkit.messageHandlers.MyObserver.postMessage(message)
-        let text = message.body as! String;
+        let text = message.body as! String
         let alertController = UIAlertController(title: "Javascript said:", message: text, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
             print("OK")
         }
         alertController.addAction(okAction)

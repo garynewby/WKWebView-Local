@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2D6195259BAF4B0047BC7F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6194259BAF4B0047BC7F /* WebView.swift */; };
 		4E930B8D2038B9660072B43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E930B8C2038B9660072B43B /* AppDelegate.swift */; };
 		4E930B8F2038B9660072B43B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E930B8E2038B9660072B43B /* ViewController.swift */; };
 		4E930B922038B9660072B43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E930B902038B9660072B43B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E2D6194259BAF4B0047BC7F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4E930B892038B9660072B43B /* WKWebViewLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E930B8C2038B9660072B43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E930B8E2038B9660072B43B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				4E930B8C2038B9660072B43B /* AppDelegate.swift */,
 				4E930B8E2038B9660072B43B /* ViewController.swift */,
+				4E2D6194259BAF4B0047BC7F /* WebView.swift */,
 				4E930B932038B9660072B43B /* Assets.xcassets */,
 				4E930BA22038B9C70072B43B /* Web_Assets */,
 				4ECD35D223DF04FF007F87B6 /* Supporting */,
@@ -85,6 +88,7 @@
 				4E930B852038B9660072B43B /* Sources */,
 				4E930B862038B9660072B43B /* Frameworks */,
 				4E930B872038B9660072B43B /* Resources */,
+				4E2D6191259BAEC60047BC7F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -102,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Mellowmuse;
 				TargetAttributes = {
 					4E930B882038B9660072B43B = {
@@ -144,11 +148,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E2D6191259BAEC60047BC7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftlint autocorrect\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E930B852038B9660072B43B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E2D6195259BAF4B0047BC7F /* WebView.swift in Sources */,
 				4E930B8D2038B9660072B43B /* AppDelegate.swift in Sources */,
 				4E930B8F2038B9660072B43B /* ViewController.swift in Sources */,
 			);
@@ -201,6 +226,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -226,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -260,6 +286,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -279,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
