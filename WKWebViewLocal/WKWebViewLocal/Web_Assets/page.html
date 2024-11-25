@@ -4,15 +4,13 @@
     <link href="css/test.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h3>Some Page</h3>
+    <h3>Some Other Page</h3>
 
     <img src="images/pic.png" width="100">
 
     <script>
-        function testJS(){
-            var message = "Some Page!"
-            window.webkit.messageHandlers.MyObserver.postMessage(message)
-            return "Show dialog"
+        function goBack(){
+            window.webkit.messageHandlers.MyObserver.postMessage("index")
         }
     </script>
     

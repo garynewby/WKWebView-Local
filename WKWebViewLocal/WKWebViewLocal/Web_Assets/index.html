@@ -16,24 +16,41 @@
     
     <p>
     A ScriptMessageHandler "MyObserver" is added when the WKWebView is configured at start up.
-    The "Call Javascript" button calls the javascript function testJS() in this html file.
+    The "Call.." button calls the javascript function changeText() in this html file, cahnging the text below.
     </p>
     
     <p>
-    testJS() > postMessage(message) calls the WKScriptMessageHandler delegate method userContentController
+    The "Show a Swift alert" link calls showSwiftDialog() which calls the WKScriptMessageHandler delegate method userContentController
     and brings up a dialog with the passed message text.
     </p>
 
+    <p id="myText">[Swift]:</p>
+
     <p>
-    <a href="page.html">Some page...</a>
+    <a href="#" onclick="showSwiftDialog()">Show a Swift alert from Javascript</a>
+    </p>
+
+    <p>
+    <a href="page.html" onclick="goPage()">Another page</a>
+
     </p>
 
     <script>
-        function testJS(){
-            var message = "Yo!"
-            window.webkit.messageHandlers.MyObserver.postMessage(message)
-            return "Show dialog"
+        // Swift can call this function
+        function changeText(swiftText) {
+            const element = document.getElementById("myText");
+            element.textContent = "Swift: " + swiftText;
         }
+
+        // Javascript can send the message "ShowAlert" to Swift
+        function showSwiftDialog() {
+            window.webkit.messageHandlers.MyObserver.postMessage("Hello!")
+        }
+
+        function goPage() {
+            window.webkit.messageHandlers.MyObserver.postMessage("goPage")
+        }
+
     </script>
     
 </body>
